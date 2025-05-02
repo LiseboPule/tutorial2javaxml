@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.dsbkml.DashboardController" spacing="20" alignment="CENTER" style="-fx-padding: 20;">
+    <Label fx:id="totalEmployeesLabel" text="Total Employees: 0" style="-fx-font-size: 18px;"/>
+    <Label fx:id="totalPayrollLabel" text="Total Payroll Expenses: M0.00" style="-fx-font-size: 18px;"/>
+
+    <Button fx:id="employeeManagementButton" text="Employee Management" onAction="#handleEmployeeManagement" style="-fx-font-size: 16px;"/>
+    <Button fx:id="salaryReportsButton" text="Salary Reports" onAction="#handleSalaryReports" style="-fx-font-size: 16px;"/>
+    <Button fx:id="generatePayslipButton" text="Generate Payslip" onAction="#handleGeneratePayslip" style="-fx-font-size: 16px;"/>
+    <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout" style="-fx-font-size: 16px;"/>
+
+    <Button fx:id="backButton" text="Back" onAction="#handleBack" style="-fx-font-size: 16px;"/>
+</VBox>

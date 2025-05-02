@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.dsbkml.payrollReportsController" spacing="20" alignment="CENTER" style="-fx-padding: 20;">
+    <Label text="Payroll Reports &amp; Charts" style="-fx-font-size: 24px;"/>
+
+    <TextArea fx:id="summaryArea" prefHeight="100" prefWidth="400" editable="false" wrapText="true"/>
+
+    <Label text="Total Payroll Expenses:" style="-fx-font-size: 20px;"/>
+    <Label fx:id="totalExpensesLabel" style="-fx-font-size: 18px;"/>
+
+    <Label text="Salary Trends (Bar Chart):" style="-fx-font-size: 20px;"/>
+    <BarChart fx:id="salaryBarChart" prefHeight="300" prefWidth="400">
+        <xAxis>
+            <CategoryAxis fx:id="xAxis"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxis"/>
+        </yAxis>
+    </BarChart>
+
+    <Label text="Salary Distribution (Pie Chart):" style="-fx-font-size: 20px;"/>
+    <PieChart fx:id="salaryPieChart" prefHeight="300" prefWidth="400"/>
+
+    <Button fx:id="backButton" text="Back" onAction="#handleBack" style="-fx-font-size: 16px;"/>
+</VBox>

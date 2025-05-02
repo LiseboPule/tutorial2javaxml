@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="DashboardController"
+            prefHeight="400.0" prefWidth="600.0">
+
+</AnchorPane>
+        <?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.scene.control.*?>
+        <?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="20" alignment="CENTER" style="-fx-padding: 20;">
+<Label text="Payroll Management System Dashboard" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+<Label fx:id="totalEmployeesLabel" style="-fx-font-size: 18px;"/>
+<Label fx:id="totalPayrollLabel" style="-fx-font-size: 18px;"/>
+
+<Button fx:id="employeeManagementButton" text="Employee Management" onAction="#handleEmployeeManagement"/>
+<Button fx:id="salaryReportsButton" text="View Salary Reports" onAction="#handleSalaryReports" />
+<Button fx:id="generatePayslipButton" text="Generate Payslip" onAction="#handleGeneratePayslip" />
+
+<Button fx:id="logoutButton" text="Logout" onAction="#handleLogout" style="-fx-background-color: red;"/>
+</VBox>

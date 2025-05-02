@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.dsbkml.PayrollController" spacing="20" alignment="CENTER" style="-fx-padding: 20;">
+    <Label text="Payroll Management" style="-fx-font-size: 24px;"/>
+
+    <TextField fx:id="employeeIdField" promptText="Employee ID"/>
+    <TextField fx:id="grossSalaryField" promptText="Gross Salary"/>
+    <TextField fx:id="netSalaryField" promptText="Net Salary"/>
+
+    <Button fx:id="generatePayslipButton" text="Generate Payslip" onAction="#generatePayslip" style="-fx-font-size: 16px;"/>
+
+    <Label text="Generated Payslips:" style="-fx-font-size: 20px;"/>
+    <ListView fx:id="payslipList" prefHeight="200" prefWidth="300"/>
+
+    <Button fx:id="backButton" text="Back" onAction="#handleBack" style="-fx-font-size: 16px;"/>
+</VBox>

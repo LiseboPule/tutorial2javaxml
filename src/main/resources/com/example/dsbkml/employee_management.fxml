@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.dsbkml.EmployeeManagementController" spacing="20" alignment="CENTER" style="-fx-padding: 20;">
+    <Label text="Employee Management" style="-fx-font-size: 24px;"/>
+
+    <TextField fx:id="employeeIdField" promptText="Employee ID"/>
+    <TextField fx:id="nameField" promptText="Name"/>
+    <TextField fx:id="departmentField" promptText="Department"/>
+    <TextField fx:id="positionField" promptText="Position"/>
+    <TextField fx:id="basicSalaryField" promptText="Basic Salary"/>
+    <TextField fx:id="workingHoursField" promptText="Working Hours"/>
+
+    <Button fx:id="addButton" text="Add Employee" onAction="#handleAddEmployee" style="-fx-font-size: 16px;"/>
+    <Button fx:id="updateButton" text="Update Employee" onAction="#handleUpdateEmployee" style="-fx-font-size: 16px;"/>
+    <Button fx:id="deleteButton" text="Delete Employee" onAction="#handleDeleteEmployee" style="-fx-font-size: 16px;"/>
+
+    <Button fx:id="backButton" text="Back" onAction="#handleBack" style="-fx-font-size: 16px;"/>
+</VBox>
